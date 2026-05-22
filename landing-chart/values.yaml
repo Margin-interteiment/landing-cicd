@@ -1,0 +1,16 @@
+image:
+  repository: ghcr.io/margin-interteiment/my-nginx        
+  tag: "1.0"              
+  pullPolicy: IfNotPresent
+
+replicas: 2               
+
+service:
+  type: NodePort
+  port: 80                 
+  nodePort: 30080
+
+secret:
+  username: 
+  password: 
+  email:          
